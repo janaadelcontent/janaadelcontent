@@ -62,6 +62,7 @@ export const translations: Record<string, string> = {
   "التوجه الاستراتيجي": "Strategic direction",
   "المخرجات": "Deliverables",
   "خطة القياس": "Measurement plan",
+  "مؤشرات أداء نموذجية": "Sample performance KPIs",
 };
 
 const englishToArabic = Object.fromEntries(

@@ -6,9 +6,9 @@ const person: Person = {
   lastName: "عادل",
   name: "جنا عادل",
   role: "خبيرة وسائل التواصل الاجتماعي وصانعة محتوى ومدربة تسويق رقمي",
-  avatar: "/images/jana-adel-placeholder.svg",
-  email: "",
-  whatsapp: "201027670707", // أضف الرقم بصيغة دولية، مثال: 201XXXXXXXXX
+  avatar: "/images/profile_photo.jpg",
+  email: "janaa.aadel@gmail.com",
+  whatsapp: "201027670707",
   location: "Africa/Cairo",
   locationLabel: "Cairo, Egypt",
   languages: ["Arabic, English"],
@@ -25,8 +25,8 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "",
-    essential: false,
+    link: "https://www.linkedin.com/in/jana-affan-4a886a15b/",
+    essential: true,
   },
   {
     name: "Instagram",
@@ -37,8 +37,8 @@ const social: Social = [
   {
     name: "Email",
     icon: "email",
-    link: "",
-    essential: false,
+    link: "mailto:janaa.aadel@gmail.com",
+    essential: true,
   },
 ];
 
@@ -102,11 +102,11 @@ const about: About = {
     title: "لنعمل معاً",
     description: (
       <>
-        للتعاون أو الحملات أو مشاريع الأبحاث: <strong>[أضف البريد الإلكتروني المهني]</strong>
+        للتعاون أو الحملات أو مشاريع الأبحاث: <strong>janaa.aadel@gmail.com</strong>
         <br />
-        واتساب: <strong>[أضف رقم واتساب بصيغة دولية]</strong>
+        واتساب: <strong>+20 102 767 0707</strong>
         <br />
-        لينكدإن وإنستغرام: <strong>[أضف روابط الحسابات]</strong>
+        لينكدإن: <strong>linkedin.com/in/jana-affan-4a886a15b</strong>
       </>
     ),
   },

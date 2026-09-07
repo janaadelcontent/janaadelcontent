@@ -1,46 +1,70 @@
-# Magic Portfolio
+# Jana Adel Portfolio
 
-Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
+Arabic-first, bilingual portfolio for **Jana Adel (جنا عادل)** — social media expert, content creator, digital marketing trainer, and practitioner in marketing research and market strategy.
 
-View the demo [here](https://demo.magic-portfolio.com).
+The site supports Arabic and English, light and dark themes, original-content gallery entries with explanatory copy, case-study pages, and a floating contact dock for WhatsApp, LinkedIn, and email.
 
-![Magic Portfolio](public/images/og/home.jpg)
+## Contact
 
-Launch your portfolio on [Aveiro](https://www.aveiro.app/marketplace/spotlight), our managed publishing platform. Update case studies, blog posts and content through MCP from your favorite AI tools.
+- Email: [janaa.aadel@gmail.com](mailto:janaa.aadel@gmail.com)
+- WhatsApp: [+20 102 767 0707](https://wa.me/201027670707)
+- LinkedIn: [Jana Affan](https://www.linkedin.com/in/jana-affan-4a886a15b/)
 
 ## Getting started
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+Use a current LTS version of Node.js (Node 22 or 24).
 
-**2. Install dependencies**
+**1. Install dependencies**
 ```
 npm install
 ```
 
-**3. Run dev server**
+**2. Run dev server**
 ```
 npm run dev
 ```
 
-**4. Edit config**
+Open `http://localhost:3000`.
+
+**3. Create a production build**
 ```
-src/resources/once-ui.config.js
+npm run build
 ```
 
-**5. Edit content**
+## Portfolio editing
+
+**Profile, contact details, experience, social links, and gallery copy**
 ```
-src/resources/content.js
+src/resources/content.tsx
 ```
 
-**6. Create blog posts / projects**
+**Floating contact dock and its three WhatsApp messages**
 ```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
+src/components/ContactDock.tsx
 ```
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+**Arabic/English interface translations**
+```
+src/resources/language.ts
+```
+
+**Case studies and original content images**
+```
+src/app/work/projects/*.mdx
+public/images/gallery/
+```
+
+## Case-study publishing checklist
+
+The existing case studies are business-ready drafts based on Jana’s documented experience and the original content in the gallery. Before presenting them as completed client results, add or confirm:
+
+1. Client approval to name the business and show work publicly.
+2. Campaign dates, live post URLs, and the services delivered.
+3. Approved performance data: reach, engagement, saves, messages, qualified leads, bookings, or sales.
+4. A short client testimonial or a verifiable business outcome where available.
+5. Replacement images or short videos that show the finished campaign in context.
+
+Do not publish confidential client information or unapproved performance claims.
 
 ## Documentation
 
@@ -67,17 +91,12 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 - Set up password protection for URLs
 
 ### Localization
-- A localized, earlier version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+- Arabic is the default language and visitors can switch to English.
+- The site respects right-to-left layout and retains English alongside Arabic.
 
-## Creators
+## Upstream credits
 
-Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
-
-## Get involved
-
-- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
-- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+Built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org), based on the Magic Portfolio template by Lorant One.
 
 ## License
 
@@ -87,7 +106,3 @@ Distributed under the CC BY-NC 4.0 License.
 - You can extend the license to [Dopler CC](https://dopler.app/license) by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
 
 See `LICENSE.txt` for more information.
-
-## Deploy with Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)

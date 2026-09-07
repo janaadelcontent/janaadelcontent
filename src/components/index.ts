@@ -8,4 +8,5 @@ export { Providers } from "@/components/Providers";
 export { ScrollToHash } from "@/components/ScrollToHash";
 export { ThemeToggle } from "@/components/ThemeToggle";
 export { LanguageToggle } from "@/components/LanguageToggle";
+export { ContactDock } from "@/components/ContactDock";
 export { CustomMDX } from "@/components/mdx";
