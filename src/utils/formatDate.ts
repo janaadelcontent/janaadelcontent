@@ -15,20 +15,20 @@ export function formatDate(date: string, includeRelative = false) {
   let formattedDate = "";
 
   if (daysAgo >= 365) {
-    formattedDate = `${Math.floor(daysAgo / 365)}y ago`;
+    formattedDate = `منذ ${Math.floor(daysAgo / 365)} سنة`;
   } else if (daysAgo >= 30) {
-    formattedDate = `${Math.floor(daysAgo / 30)}mo ago`;
+    formattedDate = `منذ ${Math.floor(daysAgo / 30)} شهر`;
   } else if (daysAgo > 0) {
-    formattedDate = `${daysAgo}d ago`;
+    formattedDate = `منذ ${daysAgo} يوم`;
   } else if (hoursAgo > 0) {
-    formattedDate = `${hoursAgo}h ago`;
+    formattedDate = `منذ ${hoursAgo} ساعة`;
   } else if (minutesAgo > 0) {
-    formattedDate = `${minutesAgo}m ago`;
+    formattedDate = `منذ ${minutesAgo} دقيقة`;
   } else {
-    formattedDate = "just now";
+    formattedDate = "الآن";
   }
 
-  const fullDate = targetDate.toLocaleString("en-us", {
+  const fullDate = targetDate.toLocaleString("ar-EG", {
     month: "long",
     day: "numeric",
     year: "numeric",

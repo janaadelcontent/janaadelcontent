@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Jana Adel profile photo placeholder</title>
+  <desc id="desc">Placeholder for a professional headshot of Jana Adel</desc>
+  <rect width="512" height="512" fill="#41223f"/>
+  <circle cx="256" cy="256" r="182" fill="#d5529d"/>
+  <text x="256" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="152" font-weight="700" text-anchor="middle">JA</text>
+</svg>

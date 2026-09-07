@@ -35,6 +35,11 @@ export default function About() {
       items: [],
     },
     {
+      title: about.contact.title,
+      display: about.contact.display,
+      items: [],
+    },
+    {
       title: about.work.title,
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
@@ -96,7 +101,7 @@ export default function About() {
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
+              {person.locationLabel ?? person.location}
             </Row>
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">
@@ -133,7 +138,7 @@ export default function About() {
                 }}
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">Schedule a call</Row>
+                <Row paddingX="8">احجز مكالمة</Row>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -199,6 +204,26 @@ export default function About() {
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
               {about.intro.description}
+            </Column>
+          )}
+
+          {about.contact.display && (
+            <Column
+              id={about.contact.title}
+              fillWidth
+              gap="m"
+              marginBottom="xl"
+              padding="l"
+              background="brand-alpha-weak"
+              border="brand-alpha-medium"
+              radius="l"
+            >
+              <Heading as="h2" variant="display-strong-s">
+                {about.contact.title}
+              </Heading>
+              <Text variant="body-default-m" onBackground="neutral-weak">
+                {about.contact.description}
+              </Text>
             </Column>
           )}
 

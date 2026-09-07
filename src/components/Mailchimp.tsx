@@ -32,7 +32,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
     setEmail(value);
 
     if (!validateEmail(value)) {
-      setError("Please enter a valid email address.");
+      setError("يرجى إدخال بريد إلكتروني صحيح.");
     } else {
       setError("");
     }
@@ -43,7 +43,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
   const handleBlur = () => {
     setTouched(true);
     if (!validateEmail(email)) {
-      setError("Please enter a valid email address.");
+      setError("يرجى إدخال بريد إلكتروني صحيح.");
     }
   };
 
@@ -135,7 +135,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
             id="mce-EMAIL"
             name="EMAIL"
             type="email"
-            placeholder="Email"
+            placeholder="البريد الإلكتروني"
             required
             onChange={(e) => {
               if (error) {
@@ -173,7 +173,7 @@ export const Mailchimp: React.FC<React.ComponentProps<typeof Column>> = ({ ...fl
           <div className="clear">
             <Row height="48" vertical="center">
               <Button id="mc-embedded-subscribe" value="Subscribe" size="m" fillWidth>
-                Subscribe
+                اشتراك
               </Button>
             </Row>
           </div>

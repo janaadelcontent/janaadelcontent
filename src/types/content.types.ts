@@ -25,6 +25,8 @@ export type Person = {
   email: string;
   /** IANA time zone location */
   location: IANATimeZone;
+  /** Human-readable location shown in the portfolio. Keep the time zone separate for the clock. */
+  locationLabel?: string;
   /** Languages spoken */
   languages?: string[];
   /**
@@ -142,6 +144,15 @@ export interface About extends BasePageConfig {
     /** Description of the introduction section */
     description: React.ReactNode;
   };
+  /** Contact call to action */
+  contact: {
+    /** Whether to display the contact section */
+    display: boolean;
+    /** Section heading */
+    title: string;
+    /** Contact details or invitation */
+    description: React.ReactNode;
+  };
   /** Work experience section */
   work: {
     /** Whether to display work experience */
@@ -240,6 +251,10 @@ export interface Gallery extends BasePageConfig {
     src: string;
     /** Image alt text */
     alt: string;
+    /** Short title that identifies the content piece */
+    title: string;
+    /** Explanation of the content concept and its purpose */
+    description: string;
     /** Image orientation (horizontal/vertical) */
     orientation: string;
   }>;

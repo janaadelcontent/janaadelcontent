@@ -36,6 +36,7 @@ export default async function RootLayout({
       suppressHydrationWarning
       as="html"
       lang={person.locale ?? "en"}
+      dir={person.locale?.startsWith("ar") ? "rtl" : "ltr"}
       fillWidth
       className={classNames(
         fonts.heading.variable,
