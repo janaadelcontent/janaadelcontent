@@ -229,7 +229,7 @@ export default function About() {
                   href={`https://wa.me/${person.whatsapp.replace(/\D/g, "")}`}
                   prefixIcon="whatsapp"
                   variant="primary"
-                  fitWidth
+                  fillWidth
                 >
                   تواصل عبر واتساب
                 </Button>
