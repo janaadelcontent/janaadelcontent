@@ -39,7 +39,7 @@ const messages = [
 
 export const ContactDock = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState<Language>("ar");
+  const [language, setLanguage] = useState<Language>("en");
   const linkedin = social.find((item) => item.name === "LinkedIn")?.link;
   const labels = copy[language];
 

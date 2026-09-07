@@ -54,18 +54,6 @@ src/app/work/projects/*.mdx
 public/images/gallery/
 ```
 
-## Case-study publishing checklist
-
-The existing case studies are business-ready drafts based on Jana’s documented experience and the original content in the gallery. Before presenting them as completed client results, add or confirm:
-
-1. Client approval to name the business and show work publicly.
-2. Campaign dates, live post URLs, and the services delivered.
-3. Approved performance data: reach, engagement, saves, messages, qualified leads, bookings, or sales.
-4. A short client testimonial or a verifiable business outcome where available.
-5. Replacement images or short videos that show the finished campaign in context.
-
-Do not publish confidential client information or unapproved performance claims.
-
 ## Documentation
 
 Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)

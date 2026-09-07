@@ -140,7 +140,7 @@ export default function About() {
                 }}
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">احجز مكالمة</Row>
+                <Row paddingX="8">Schedule a call</Row>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -233,13 +233,21 @@ export default function About() {
                   variant="primary"
                   fillWidth
                 >
-                  تواصل عبر واتساب
+                  Contact on WhatsApp
                 </Button>
               ) : (
                 <Text variant="body-default-s" onBackground="neutral-weak">
-                  سيظهر زر واتساب هنا بعد إضافة الرقم في إعدادات الملف الشخصي.
+                  A WhatsApp button will appear here once the number is added to the profile settings.
                 </Text>
               )}
+              <Button
+                href="/api/portfolio-pdf"
+                prefixIcon="document"
+                variant="secondary"
+                fillWidth
+              >
+                Download portfolio PDF
+              </Button>
             </Column>
           )}
 

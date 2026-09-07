@@ -2,23 +2,23 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "جنا",
-  lastName: "عادل",
-  name: "جنا عادل",
-  role: "خبيرة وسائل التواصل الاجتماعي وصانعة محتوى ومدربة تسويق رقمي",
+  firstName: "Jana",
+  lastName: "Adel",
+  name: "Jana Adel",
+  role: "Social media expert, content creator, and digital marketing trainer",
   avatar: "/images/profile_photo.jpg",
   email: "janaa.aadel@gmail.com",
   whatsapp: "201027670707",
   location: "Africa/Cairo",
   locationLabel: "Cairo, Egypt",
   languages: ["Arabic, English"],
-  locale: "ar",
+  locale: "en",
 };
 
 const newsletter: Newsletter = {
   display: false,
-  title: <>اشترك في نشرة جنا البريدية</>,
-  description: <>[أضف موضوع النشرة ورابط الاشتراك.]</>,
+  title: <>Subscribe to Jana&apos;s newsletter</>,
+  description: <>[Add the newsletter topic and subscription link.]</>,
 };
 
 const social: Social = [
@@ -45,10 +45,10 @@ const social: Social = [
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
-  label: "الرئيسية",
-  title: `${person.name} — خبيرة وسائل التواصل الاجتماعي وصانعة محتوى`,
-  description: `ملف أعمال ${person.name}، ${person.role} المتخصصة في أبحاث التسويق واستراتيجية السوق.`,
-  headline: <>محتوى يحوّل الاهتمام إلى تأثير.</>,
+  label: "Home",
+  title: `${person.name} — Social media expert and content creator`,
+  description: `${person.name}'s portfolio: ${person.role}, specialising in marketing research and market strategy.`,
+  headline: <>Content that turns attention into action.</>,
   featured: {
     display: true,
     title: (
@@ -56,7 +56,7 @@ const home: Home = {
         <strong>Jana Adel</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          أعمال مختارة في المحتوى والاستراتيجية
+          Selected content and strategy work
         </Text>
       </Row>
     ),
@@ -64,17 +64,16 @@ const home: Home = {
   },
   subline: (
     <>
-      أنا {person.firstName}، {person.role}. أساعد العلامات التجارية والأفراد على بناء رسائل
-      واضحة ومحتوى فعّال واستراتيجيات تسويقية قائمة على فهم الجمهور والسوق.
+      I&apos;m Jana, a social media expert, content creator, and digital marketing trainer. I help brands and individuals develop clear messaging, effective content, and marketing strategies grounded in audience and market insight.
     </>
   ),
 };
 
 const about: About = {
   path: "/about",
-  label: "عن جنا",
-  title: `عن جنا – ${person.name}`,
-  description: `تعرّف على ${person.name}، ${person.role}.`,
+  label: "About",
+  title: `About ${person.name}`,
+  description: `Learn about ${person.name}, ${person.role}.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -88,80 +87,80 @@ const about: About = {
   },
   intro: {
     display: true,
-    title: "نبذة",
+    title: "Introduction",
     description: (
       <>
-        جنا خبيرة في وسائل التواصل الاجتماعي وصناعة المحتوى ومدربة تسويق رقمي، تجمع بين فهم
-        الجمهور والسرد المؤثر والاستراتيجية العملية. لديها خبرة في إدارة العمليات، وأبحاث
-        السوق، وكتابة المحتوى، وإدارة الحملات، وتدريب الشباب والطلاب على التسويق الرقمي.
+        Jana is a social media expert, content creator, and digital marketing trainer who combines
+        audience insight, compelling storytelling, and practical strategy. Her experience spans operations,
+        marketing research, content writing, campaign management, and digital-marketing training for young people and students.
       </>
     ),
   },
   contact: {
     display: true,
-    title: "لنعمل معاً",
+    title: "Let&apos;s work together",
     description: (
       <>
-        للتعاون أو الحملات أو مشاريع الأبحاث: <strong>janaa.aadel@gmail.com</strong>
+        For collaborations, campaigns, or research projects: <strong>janaa.aadel@gmail.com</strong>
         <br />
-        واتساب: <strong>+20 102 767 0707</strong>
+        WhatsApp: <strong>+20 102 767 0707</strong>
         <br />
-        لينكدإن: <strong>linkedin.com/in/jana-affan-4a886a15b</strong>
+        LinkedIn: <strong>linkedin.com/in/jana-affan-4a886a15b</strong>
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "الخبرات العملية",
+    title: "Work experience",
     experiences: [
       {
         company: "Y-PEER",
-        timeframe: "نوفمبر 2021 - حتى الآن (دوام جزئي)",
-        role: "مدربة عبر الإنترنت",
+        timeframe: "November 2021 – present · Part-time",
+        role: "Online trainer",
         achievements: [
-          <>تدريب الشباب على موضوعات الشبكة باستخدام منصات تعليمية وتفاعلية عبر الإنترنت.</>,
-          <>استخدام أدوات مثل Kahoot وPadlet وNearpod وMentimeter وGoogle Classroom وClassPoint وWordwall.</>,
+          <>Train young people on the network&apos;s subjects through online learning and interactive platforms.</>,
+          <>Use tools including Kahoot, Padlet, Nearpod, Mentimeter, Google Classroom, ClassPoint, and Wordwall.</>,
         ],
         images: [],
       },
       {
-        company: "مشروع تأهيل الشباب للتوظيف الذاتي - الأكاديمية الأوروبية الحديثة",
-        timeframe: "أكتوبر 2020 - حتى الآن (دوام جزئي)",
-        role: "مدربة تسويق رقمي",
+        company: "Youth Qualification for Self-employment Project – Modern European Academy",
+        timeframe: "October 2020 – present · Part-time",
+        role: "Digital marketing trainer",
         achievements: [
-          <>تدريب الطلاب على أساسيات التسويق وخطة واستراتيجية التسويق وأبحاث السوق وتحديد العميل المثالي ورحلة العميل.</>,
-          <>تقديم تدريب عملي على القنوات الاجتماعية والمحتوى ومراقبة الحملات والإعلانات عبر فيسبوك وإنستغرام وX وغيرها.</>,
+          <>Train students in marketing fundamentals, marketing plans and strategy, market research, ideal-customer definition, and customer journeys.</>,
+          <>Deliver practical training in social channels, content, campaign monitoring, and advertising across Facebook, Instagram, X, and more.</>,
         ],
         images: [],
       },
       {
         company: "ELADL MEDIA CO.",
-        timeframe: "فبراير 2019 - حتى الآن",
-        role: "مديرة عمليات",
+        timeframe: "February 2019 – present",
+        role: "Operations manager",
         achievements: [
-          <>إدارة فريق عمل متكامل والإشراف عليه وإعداد التقارير.</>,
-          <>كتابة المحتوى ونشره لعملاء الشركة، وتطوير محتوى أصلي عبر الاستماع الاجتماعي والمصادر المستقلة.</>,
-          <>تعزيز جودة المحتوى بالمراجعة والتحرير ومتابعة أخبار الصناعة ومصادرها.</>,
+          <>Manage and supervise an integrated team and prepare reports.</>,
+          <>Write and publish content for company clients, developing original content through social listening and independent sources.</>,
+          <>Improve content quality through review, editing, and industry-news monitoring.</>,
         ],
         images: [],
       },
       {
-        company: "Horus للتجارة والتنمية الزراعية",
-        timeframe: "أغسطس 2019 - يناير 2020",
-        role: "أخصائية علاقات عامة ومسؤولة تسويق",
+        company: "Horus Trading and Agricultural Development",
+        timeframe: "August 2019 – January 2020",
+        role: "Public relations specialist and marketing officer",
         achievements: [
-          <>تصميم وتنفيذ مخرجات الحملات، بما فيها الدعوات البريدية والمقالات والفيديوهات التسويقية.</>,
-          <>إجراء تحليل السوق ومتابعة نشاط المنافسين وإدارة الاتصالات الداخلية والخارجية واتصالات الأزمات.</>,
+          <>Design and deliver campaign assets, including email invitations, articles, and marketing videos.</>,
+          <>Conduct market analysis, monitor competitor activity, and manage internal, external, and crisis communications.</>,
         ],
         images: [],
       },
       {
-        company: "عمل حر",
+        company: "Freelance",
         timeframe: "2017 - 2019",
-        role: "أخصائية وسائل التواصل الاجتماعي",
+        role: "Social media specialist",
         achievements: [
-          <>إعداد عروض رقمية تفاعلية للمديرين وكتابة مراسلات أعمال احترافية وتقارير تحديثات.</>,
-          <>استخدام التنبؤ بالمبيعات والتخطيط الاستراتيجي لدعم ربحية المنتجات والخدمات.</>,
+          <>Prepare interactive digital presentations for managers and write professional business correspondence and update reports.</>,
+          <>Use sales forecasting and strategic planning to support product and service profitability.</>,
         ],
         images: [],
       },
@@ -169,30 +168,30 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "التعليم والشهادات",
+    title: "Education and certifications",
     institutions: [
       {
-        name: "بكالوريوس الزراعة - جامعة طنطا",
+        name: "Bachelor of Agriculture – Tanta University",
         description: <>2014 - 2018</>,
       },
       {
-        name: "تدريب المدربين (TOT) - مشروع UNFPA / Y-PEER",
-        description: <>يونيو 2019</>,
+        name: "Training of Trainers (TOT) – UNFPA / Y-PEER Project",
+        description: <>June 2019</>,
       },
       {
-        name: "إعداد مهندسين زراعيين لزراعة الخضراوات تحت الصوب",
-        description: <>الشركة الوطنية بالتعاون مع الهيئة العربية للتصنيع ووزارة الزراعة - سبتمبر إلى نوفمبر 2019</>,
+        name: "Preparing agricultural engineers for greenhouse vegetable cultivation",
+        description: <>National Company in cooperation with the Arab Organization for Industrialization and the Ministry of Agriculture – September to November 2019</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "مجالات الخبرة",
+    title: "Core expertise",
     skills: [
       {
-        title: "إدارة وسائل التواصل الاجتماعي",
+        title: "Social media management",
         description: (
-          <>تخطيط محتوى مناسب لكل منصة، وبناء جداول المحتوى، وإدارة التفاعل مع المجتمع ومراقبة الحملات.</>
+          <>Plan platform-appropriate content, build content calendars, manage community engagement, and monitor campaigns.</>
         ),
         tags: [
           {
@@ -202,40 +201,40 @@ const about: About = {
         images: [],
       },
       {
-        title: "صناعة المحتوى",
+        title: "Content creation",
         description: (
-          <>تحويل رسائل العلامة التجارية ورؤى الجمهور إلى أفكار محتوى ونصوص وتوجيه إبداعي جذاب، مع التدقيق والتحرير واستخدام أدوات التصوير والتحرير.</>
+          <>Turn brand messaging and audience insight into engaging content ideas, copy, and creative direction, supported by proofreading, editing, and photography and editing tools.</>
         ),
         tags: [
           {
-            name: "مقالات، فيديوهات، منشورات، عروض",
+            name: "Articles, videos, posts, presentations",
           },
           {
-            name: "أدوات التصوير والتحرير",
-          },
-        ],
-        images: [],
-      },
-      {
-        title: "أبحاث التسويق ورؤى الجمهور",
-        description: (
-          <>دراسة الجمهور والمنافسين وإشارات السوق وتحديد العميل المثالي ورحلة العميل لدعم قرارات المحتوى والحملات.</>
-        ),
-        tags: [
-          {
-            name: "تحليل السوق والمنافسين",
+            name: "Photography and editing tools",
           },
         ],
         images: [],
       },
       {
-        title: "استراتيجية السوق",
+        title: "Marketing research and audience insight",
         description: (
-          <>تحويل الأبحاث إلى توصيات عملية للتموضع والقنوات والمحتوى والحملات، بما يشمل نماذج الأعمال والقيمة المقترحة وخطط التسويق.</>
+          <>Study audiences, competitors, market signals, ideal customers, and customer journeys to inform content and campaign decisions.</>
         ),
         tags: [
           {
-            name: "خطة التسويق ورحلة العميل",
+            name: "Market and competitor analysis",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Market strategy",
+        description: (
+          <>Turn research into practical recommendations for positioning, channels, content, and campaigns, including business models, value propositions, and marketing plans.</>
+        ),
+        tags: [
+          {
+            name: "Marketing plan and customer journey",
           },
         ],
         images: [],
@@ -246,110 +245,110 @@ const about: About = {
 
 const blog: Blog = {
   path: "/blog",
-  label: "مقالات",
-  title: "رؤى وملاحظات",
-  description: `رؤى في التسويق والمحتوى من ${person.name}`,
+  label: "Articles",
+  title: "Insights and notes",
+  description: `Marketing and content insights from ${person.name}`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work: Work = {
   path: "/work",
-  label: "دراسات الحالة",
-  title: `دراسات الحالة والأعمال الاستراتيجية – ${person.name}`,
-  description: `أعمال ${person.name} في وسائل التواصل الاجتماعي والمحتوى والأبحاث واستراتيجية السوق`,
+  label: "Case studies",
+  title: `Case studies and strategic work – ${person.name}`,
+  description: `${person.name}'s work in social media, content, research, and market strategy`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "صناعة المحتوى",
-  title: `معرض صناعة المحتوى – ${person.name}`,
-  description: "محتوى أصلي من تصميم جنا لوسائل التواصل الاجتماعي، يوضح كيف تحوّل أسئلة الجمهور ومزايا المنتجات إلى قصص بصرية واضحة وجذابة.",
+  label: "Content creation",
+  title: `Content creation showcase – ${person.name}`,
+  description: "Original social content by Jana, showing how audience questions and product benefits become clear, engaging visual stories.",
   images: [
     {
       src: "/images/gallery/741365568_122109772761298739_1925903136731901658_n.jpg",
-      alt: "منشور تعليمي لتخطيط الحمام لصالح أحمد علي للتشطيبات والديكور",
-      title: "دليل تخطيط الحمام",
-      description: "منشور تعليمي يحوّل تفاصيل تخطيط الحمام إلى إشارات بصرية واضحة، ليساعد العملاء المحتملين على معرفة ما يجب التفكير فيه قبل بدء التشطيب.",
+      alt: "Educational bathroom-planning post for Ahmed Ali Finishing and Décor",
+      title: "Bathroom planning guide",
+      description: "An educational post that turns bathroom-planning details into clear visual cues, helping prospective clients know what to consider before finishing begins.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/742278172_122109953607298739_4884959408223029162_n.jpg",
-      alt: "نصيحة عن موضع وحدة التلفزيون لصالح أحمد علي للتشطيبات والديكور",
-      title: "خطط لجدار التلفزيون قبل التشطيب",
-      description: "منشور لحل مشكلة شائعة لدى أصحاب المنازل، يستخدم عنواناً مباشراً ومثالاً بصرياً لتشجيع الحفظ والتعليقات.",
+      alt: "TV-unit placement advice for Ahmed Ali Finishing and Décor",
+      title: "Plan the TV wall before finishing",
+      description: "A post that addresses a common homeowner problem with a direct headline and visual example that encourages saves and comments.",
       orientation: "square",
     },
     {
       src: "/images/gallery/750617433_122107771911392444_2952137954997065360_n.jpg",
-      alt: "منشور توعوي لاختيار السماد لصالح شركة حورس",
-      title: "اختر السماد بثقة",
-      description: "منشور توعوي يعيد تقديم اختيار السماد كاستثمار طويل المدى، مستخدماً فكرة بصرية قوية تلفت الانتباه أثناء التصفح.",
+      alt: "Fertilizer-choice education post for Horus",
+      title: "Choose fertilizer with confidence",
+      description: "An educational post that frames fertilizer choice as a long-term investment, using a strong visual concept to stop the scroll.",
       orientation: "square",
     },
     {
       src: "/images/gallery/752620010_122110313091392444_6322651060208188094_n.jpg",
-      alt: "منشور تعليمي عن اصفرار الأوراق لصالح شركة حورس",
-      title: "لماذا تصفر الأوراق الجديدة؟",
-      description: "صيغة تعليمية مستوحاة من أسئلة البحث، تجيب عن سؤال حقيقي للجمهور وتشرح الأسباب المحتملة وتعرض المنتج كجزء من الحل.",
+      alt: "Educational post about yellowing leaves for Horus",
+      title: "Why new leaves turn yellow",
+      description: "A research-led educational format that answers a real audience question, explains likely causes, and positions the product as part of the solution.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/754173798_122111115507392444_3229624667310912974_n.jpg",
-      alt: "منشور للتعريف بمنتج كيوب كيه لصالح شركة حورس",
-      title: "التعريف بمنتج كيوب كيه",
-      description: "تصميم موجز للتعريف بالمنتج، يستخدم عنواناً قوياً وتكويناً بسيطاً ليجعل اسم المنتج وفائدته سهلَي التذكر.",
+      alt: "Cube-K product-awareness post for Horus",
+      title: "Cube-K product awareness",
+      description: "A concise product-awareness design with a strong headline and simple composition that make the product name and benefit easy to remember.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/754462817_122110304919392444_8615957788398259004_n.jpg",
-      alt: "منشور هوية بصرية للنمو الجديد لصالح شركة حورس",
-      title: "رسالة نمو جديدة",
-      description: "تصميم نظيف يقوده المنتج، يربط بين الأوراق الصحية ووعد العلامة التجارية، ويعزز التذكر مع الحفاظ على رسالة بسيطة.",
+      alt: "New-growth visual-identity post for Horus",
+      title: "A new-growth brand message",
+      description: "A clean, product-led design that connects healthy leaves with the brand promise and builds recall while keeping the message simple.",
       orientation: "square",
     },
     {
       src: "/images/gallery/756139053_122111533491298739_1106585143775612591_n.jpg",
-      alt: "نصيحة لتجهيز السباكة لصالح أحمد علي للتشطيبات والديكور",
-      title: "تجنب مشكلات السباكة مبكراً",
-      description: "منشور توعوي يبرز خطراً خفياً قبل أن يصبح مكلفاً، ويقدم العلامة التجارية كخبير يساعد العميل لا كمجرد مقدم خدمة.",
+      alt: "Plumbing-preparation tip for Ahmed Ali Finishing and Décor",
+      title: "Prevent plumbing problems early",
+      description: "An educational post that highlights a hidden risk before it becomes costly, positioning the brand as a helpful expert rather than only a service provider.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/765694074_122115950253392444_8147023490213788659_n.jpg",
-      alt: "منشور تعليمي لمنتج زراعي لصالح شركة حورس",
-      title: "توعية عملية للعناية بالمحاصيل",
-      description: "منشور تعليمي يحوّل فائدة المنتج إلى إرشاد مفيد وسهل الفهم للجمهور الزراعي.",
+      alt: "Educational agricultural-product post for Horus",
+      title: "Practical crop-care education",
+      description: "An educational post that turns a product benefit into helpful, easy-to-understand guidance for an agricultural audience.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/769324476_122112609381298739_5975140177248648632_n.jpg",
-      alt: "تصميم لوسائل التواصل الاجتماعي لعلامة حورس الزراعية",
-      title: "سرد بصري للعلامة الزراعية",
-      description: "تصميم يحمل هوية العلامة للحفاظ على اتساق التواصل عن المنتج عبر المحتوى، وتعزيز الثقة والتعرّف على العلامة.",
+      alt: "Social-media design for the Horus agricultural brand",
+      title: "Agricultural brand storytelling",
+      description: "A branded design that keeps product communication consistent across content, strengthening trust and brand recognition.",
       orientation: "square",
     },
     {
       src: "/images/gallery/781923862_122113773705298739_4119283306258091273_n.jpg",
-      alt: "تصميم لمنتج زراعي على وسائل التواصل الاجتماعي لصالح حورس",
-      title: "تسليط الضوء على فائدة المنتج",
-      description: "قطعة محتوى مركزة تقدم فائدة واحدة للمنتج بوضوح، ليكون من السهل قراءتها سريعاً على منصات التواصل عبر الهاتف.",
+      alt: "Agricultural-product social-media design for Horus",
+      title: "Product benefit spotlight",
+      description: "A focused content piece that presents one product benefit clearly, making it easy to read quickly on mobile social platforms.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/787888529_122114529819298739_5985919033583710538_n.jpg",
-      alt: "تصميم حملة زراعية على وسائل التواصل الاجتماعي لصالح حورس",
-      title: "تصميم رسالة الحملة",
-      description: "تصميم جاهز للحملة يجمع بين توصيل رسالة المنتج ونظام هوية متسق، ليمنح العلامة حضوراً أقوى في المحتوى.",
+      alt: "Agricultural social-media campaign design for Horus",
+      title: "Campaign message visual",
+      description: "A campaign-ready design that combines product messaging with a consistent identity system to give the brand a stronger content presence.",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/clipssaver-facebook-photo-11d30a1739dd.jpg",
-      alt: "شعار أحمد علي للتشطيبات والديكور",
-      title: "مرجع الهوية البصرية",
-      description: "الهوية البصرية المستخدمة كأساس لسلسلة محتوى أحمد علي، للحفاظ على اتساق كل منشور على وسائل التواصل.",
+      alt: "Ahmed Ali Finishing and Décor logo",
+      title: "Brand identity reference",
+      description: "The visual identity used as the foundation for Ahmed Ali&apos;s content series, keeping every social post consistent.",
       orientation: "square",
     },
   ],

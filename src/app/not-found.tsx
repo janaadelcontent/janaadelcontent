@@ -7,9 +7,9 @@ export default function NotFound() {
         404
       </Text>
       <Heading marginBottom="l" variant="display-default-xs">
-        الصفحة غير موجودة
+        Page not found
       </Heading>
-      <Text onBackground="neutral-weak">الصفحة التي تبحث عنها غير موجودة.</Text>
+      <Text onBackground="neutral-weak">The page you are looking for does not exist.</Text>
     </Column>
   );
 }
