@@ -25,7 +25,7 @@ export default function GalleryView() {
           />
           <Column gap="8" paddingX="4">
             <Tag size="s">
-              محتوى أصلي من صناعة جانا
+              محتوى أصلي من صناعة جنا
             </Tag>
             <Text variant="heading-strong-s">{image.title}</Text>
             <Text variant="body-default-s" onBackground="neutral-weak">

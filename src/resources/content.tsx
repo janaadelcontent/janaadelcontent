@@ -8,16 +8,16 @@ const person: Person = {
   role: "خبيرة وسائل التواصل الاجتماعي وصانعة محتوى ومدربة تسويق رقمي",
   avatar: "/images/jana-adel-placeholder.svg",
   email: "",
-  whatsapp: "", // أضف الرقم بصيغة دولية، مثال: 201XXXXXXXXX
-  location: "Etc/UTC", // يُستبدل بالمنطقة الزمنية الفعلية لجانا عند تأكيدها.
-  locationLabel: "[أضف المدينة والدولة]",
-  languages: ["[أضف اللغات]"],
+  whatsapp: "201027670707", // أضف الرقم بصيغة دولية، مثال: 201XXXXXXXXX
+  location: "Africa/Cairo",
+  locationLabel: "Cairo, Egypt",
+  languages: ["Arabic, English"],
   locale: "ar",
 };
 
 const newsletter: Newsletter = {
   display: false,
-  title: <>اشترك في نشرة جانا البريدية</>,
+  title: <>اشترك في نشرة جنا البريدية</>,
   description: <>[أضف موضوع النشرة ورابط الاشتراك.]</>,
 };
 
@@ -72,8 +72,8 @@ const home: Home = {
 
 const about: About = {
   path: "/about",
-  label: "عن جانا",
-  title: `عن جانا – ${person.name}`,
+  label: "عن جنا",
+  title: `عن جنا – ${person.name}`,
   description: `تعرّف على ${person.name}، ${person.role}.`,
   tableOfContent: {
     display: true,
@@ -266,7 +266,7 @@ const gallery: Gallery = {
   path: "/gallery",
   label: "صناعة المحتوى",
   title: `معرض صناعة المحتوى – ${person.name}`,
-  description: "محتوى أصلي من تصميم جانا لوسائل التواصل الاجتماعي، يوضح كيف تحوّل أسئلة الجمهور ومزايا المنتجات إلى قصص بصرية واضحة وجذابة.",
+  description: "محتوى أصلي من تصميم جنا لوسائل التواصل الاجتماعي، يوضح كيف تحوّل أسئلة الجمهور ومزايا المنتجات إلى قصص بصرية واضحة وجذابة.",
   images: [
     {
       src: "/images/gallery/741365568_122109772761298739_1925903136731901658_n.jpg",

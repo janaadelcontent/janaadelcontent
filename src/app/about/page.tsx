@@ -55,6 +55,8 @@ export default function About() {
       items: about.technical.skills.map((skill) => skill.title),
     },
   ];
+  const whatsappMessage = "I want more info about your services and products";
+
   return (
     <Column maxWidth="m">
       <Schema
@@ -226,7 +228,7 @@ export default function About() {
               </Text>
               {person.whatsapp ? (
                 <Button
-                  href={`https://wa.me/${person.whatsapp.replace(/\D/g, "")}`}
+                  href={`https://wa.me/${person.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`}
                   prefixIcon="whatsapp"
                   variant="primary"
                   fillWidth
