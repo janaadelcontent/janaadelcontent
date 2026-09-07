@@ -23,6 +23,8 @@ export type Person = {
   avatar: string;
   /** Email address */
   email: string;
+  /** WhatsApp number in international format, without a leading + or punctuation */
+  whatsapp?: string;
   /** IANA time zone location */
   location: IANATimeZone;
   /** Human-readable location shown in the portfolio. Keep the time zone separate for the clock. */

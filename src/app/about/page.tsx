@@ -224,6 +224,20 @@ export default function About() {
               <Text variant="body-default-m" onBackground="neutral-weak">
                 {about.contact.description}
               </Text>
+              {person.whatsapp ? (
+                <Button
+                  href={`https://wa.me/${person.whatsapp.replace(/\D/g, "")}`}
+                  prefixIcon="whatsapp"
+                  variant="primary"
+                  fitWidth
+                >
+                  تواصل عبر واتساب
+                </Button>
+              ) : (
+                <Text variant="body-default-s" onBackground="neutral-weak">
+                  سيظهر زر واتساب هنا بعد إضافة الرقم في إعدادات الملف الشخصي.
+                </Text>
+              )}
             </Column>
           )}
 

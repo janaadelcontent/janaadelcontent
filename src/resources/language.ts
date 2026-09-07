@@ -3,6 +3,8 @@ export type Language = "ar" | "en";
 // Visitor-facing Arabic copy and its English equivalent. Content is authored in Arabic first.
 export const translations: Record<string, string> = {
   "الرئيسية": "Home",
+  "جنا عادل": "Jana Adel",
+  "خبيرة وسائل التواصل الاجتماعي وصانعة محتوى ومدربة تسويق رقمي": "Social media expert, content creator, and digital marketing trainer",
   "عن جانا": "About",
   "دراسات الحالة": "Case studies",
   "صناعة المحتوى": "Content creation",
@@ -16,8 +18,8 @@ export const translations: Record<string, string> = {
   "إدارة وسائل التواصل الاجتماعي": "Social media management",
   "أبحاث التسويق ورؤى الجمهور": "Marketing research & insights",
   "استراتيجية السوق": "Market strategy",
-  "دراسات الحالة والأعمال الاستراتيجية – Jana Adel": "Case studies & strategic work – Jana Adel",
-  "معرض صناعة المحتوى – Jana Adel": "Content creation showcase – Jana Adel",
+  "دراسات الحالة والأعمال الاستراتيجية – جنا عادل": "Case studies & strategic work – Jana Adel",
+  "معرض صناعة المحتوى – جنا عادل": "Content creation showcase – Jana Adel",
   "محتوى أصلي من صناعة جانا": "Original content creation",
   "دليل تخطيط الحمام": "Bathroom planning guide",
   "خطط لجدار التلفزيون قبل التشطيب": "Plan the TV wall before finishing",
@@ -38,6 +40,8 @@ export const translations: Record<string, string> = {
   "احجز مكالمة": "Schedule a call",
   "كلمة المرور": "Password",
   "إرسال": "Submit",
+  "تواصل عبر واتساب": "Contact on WhatsApp",
+  "سيظهر زر واتساب هنا بعد إضافة الرقم في إعدادات الملف الشخصي.": "A WhatsApp button will appear here once the number is added to the profile settings.",
   "أحدث المقالات": "Latest articles",
   "قالب دراسة حالة لحملة على وسائل التواصل الاجتماعي، يشمل الموجز ونهج المحتوى وخطة القنوات والنتائج.": "A social media campaign case-study template covering the brief, content approach, channel plan, and results.",
   "قالب دراسة حالة بحثية يوضح كيف شكّلت رؤى السوق والجمهور والمنافسين توصية تسويقية.": "A research case-study template showing how market, audience, and competitor insight shaped a marketing recommendation.",
