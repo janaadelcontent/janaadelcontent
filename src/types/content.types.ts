@@ -247,7 +247,7 @@ export interface Work extends BasePageConfig {}
  * @description Configuration for the Gallery page, including metadata, navigation label, and image list.
  */
 export interface Gallery extends BasePageConfig {
-  /** List of images in the gallery */
+  /** List of images and videos in the gallery */
   images: Array<{
     /** Image source path */
     src: string;
@@ -259,5 +259,7 @@ export interface Gallery extends BasePageConfig {
     description: string;
     /** Image orientation (horizontal/vertical) */
     orientation: string;
+    /** Media format for rendering the gallery item */
+    type?: "image" | "video";
   }>;
 }

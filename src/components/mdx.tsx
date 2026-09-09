@@ -77,6 +77,21 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
   );
 }
 
+function PortfolioVideo({ src, title }: { src: string; title: string }) {
+  return (
+    <video
+      aria-label={title}
+      controls
+      playsInline
+      preload="metadata"
+      style={{ borderRadius: "0.75rem", display: "block", margin: "1rem 0", width: "100%" }}
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support embedded video.
+    </video>
+  );
+}
+
 function slugify(str: string): string {
   const strWithAnd = str.replace(/&/g, " and "); // Replace & with 'and'
   return transliterate(strWithAnd, {
@@ -201,6 +216,7 @@ const components = {
   Column,
   Icon,
   Media,
+  PortfolioVideo,
   SmartLink,
 };
 

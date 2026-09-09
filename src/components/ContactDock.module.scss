@@ -44,6 +44,13 @@
 
 .action {
   padding: 0 var(--static-space-16);
+
+  :global(svg) {
+    display: block;
+    width: 1.125rem;
+    height: 1.125rem;
+    flex: 0 0 1.125rem;
+  }
 }
 
 .whatsapp {
@@ -89,7 +96,7 @@
     bottom: calc(5rem + var(--static-space-16));
   }
 
-  .action span {
+  .action .label {
     display: none;
   }
 

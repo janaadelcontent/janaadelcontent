@@ -76,7 +76,7 @@ export const ContactDock = () => {
               target="_blank"
             >
               <Icon name="whatsapp" />
-              <span>{[labels.services, labels.research, labels.content][index]}</span>
+              <span className={styles.label}>{[labels.services, labels.research, labels.content][index]}</span>
             </a>
           ))}
         </div>
@@ -90,9 +90,9 @@ export const ContactDock = () => {
             className={`${styles.action} ${styles.whatsapp}`}
             onClick={() => setIsOpen((open) => !open)}
             type="button"
-          >
-            <Icon name="whatsapp" />
-            <span>{labels.whatsapp}</span>
+            >
+              <Icon name="whatsapp" />
+            <span className={styles.label}>{labels.whatsapp}</span>
           </button>
         )}
         {linkedin && (
@@ -104,7 +104,7 @@ export const ContactDock = () => {
             target="_blank"
           >
             <Icon name="linkedin" />
-            <span>{labels.linkedin}</span>
+            <span className={styles.label}>{labels.linkedin}</span>
           </a>
         )}
         {person.email && (
@@ -114,7 +114,7 @@ export const ContactDock = () => {
             href={`mailto:${person.email}?subject=${encodeURIComponent("Portfolio enquiry")}`}
           >
             <Icon name="email" />
-            <span>{labels.email}</span>
+            <span className={styles.label}>{labels.email}</span>
           </a>
         )}
       </div>

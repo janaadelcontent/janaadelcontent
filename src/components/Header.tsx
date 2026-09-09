@@ -167,6 +167,18 @@ export const Header = () => {
                   </Row>
                 </>
               )}
+              <>
+                <Row s={{ hide: true }}>
+                  <ToggleButton
+                    prefixIcon="document"
+                    href="/api/portfolio-pdf"
+                    label="Download portfolio PDF"
+                  />
+                </Row>
+                <Row hide s={{ hide: false }}>
+                  <ToggleButton prefixIcon="document" href="/api/portfolio-pdf" />
+                </Row>
+              </>
               {display.themeSwitcher && (
                 <>
                   <Line background="neutral-alpha-medium" vert maxHeight="24" />
