@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Jana",
   lastName: "Adel",
   name: "Jana Adel",
-  role: "Social media expert, content creator, and digital marketing trainer",
+  role: "Social media content creator and strategist",
   avatar: "/images/profile_photo.jpg",
   email: "janaa.aadel@gmail.com",
   whatsapp: "201027670707",
@@ -90,9 +90,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Jana is a social media expert, content creator, and digital marketing trainer who combines
-        audience insight, compelling storytelling, and practical strategy. Her experience spans operations,
-        marketing research, content writing, campaign management, and digital-marketing training for young people and students.
+        <Text as="p">I don&apos;t start with &ldquo;What should we post today?&rdquo; I start with &ldquo;What does the audience need to understand, feel, or do?&rdquo;</Text>
+        <Text as="p">I&apos;m a social media content creator and strategist focused on turning business ideas into clear, useful, and visually strong content. My work goes beyond designing individual posts: I develop content directions, build recurring series, translate technical or complicated information into audience-friendly stories, write Arabic copy, direct the visual concept, and turn one business objective into multiple content ideas across a consistent brand system.</Text>
+        <Text as="p">I work hands-on from idea and research through creative direction, design, caption writing, and publishing—so I understand how every piece needs to work together, not only how each piece looks.</Text>
+        <Text as="p"><strong>What I can actually handle:</strong> Content strategy &amp; planning · Content pillars · Content ideation · Copywriting · Creative direction · Social media design · Educational content · Brand consistency · Reels concepts &amp; scripts · Community-focused content</Text>
       </>
     ),
   },
@@ -189,52 +190,52 @@ const about: About = {
     title: "Core expertise",
     skills: [
       {
-        title: "Social media management",
+        title: "Content strategy and planning",
         description: (
-          <>Plan platform-appropriate content, build content calendars, manage community engagement, and monitor campaigns.</>
+          <>Build content directions, pillars, recurring series, and publishing plans around the audience, the business objective, and the role each piece of content needs to play.</>
         ),
         tags: [
           {
-            name: "Facebook, Instagram, X",
+            name: "Content pillars, ideation, calendars",
           },
         ],
         images: [],
       },
       {
-        title: "Content creation",
+        title: "Content creation and creative direction",
         description: (
-          <>Turn brand messaging and audience insight into engaging content ideas, copy, and creative direction, supported by proofreading, editing, and photography and editing tools.</>
+          <>Turn complex ideas into clear Arabic copy, visual concepts, educational posts, social-media designs, and Reels concepts that work together as a recognisable brand system.</>
         ),
         tags: [
           {
-            name: "Articles, videos, posts, presentations",
+            name: "Arabic copywriting, design, Reels concepts",
           },
           {
-            name: "Photography and editing tools",
-          },
-        ],
-        images: [],
-      },
-      {
-        title: "Marketing research and audience insight",
-        description: (
-          <>Study audiences, competitors, market signals, ideal customers, and customer journeys to inform content and campaign decisions.</>
-        ),
-        tags: [
-          {
-            name: "Market and competitor analysis",
+            name: "Creative direction and brand consistency",
           },
         ],
         images: [],
       },
       {
-        title: "Market strategy",
+        title: "Audience insight and community-focused content",
         description: (
-          <>Turn research into practical recommendations for positioning, channels, content, and campaigns, including business models, value propositions, and marketing plans.</>
+          <>Use questions, audience signals, competitor context, and market research to uncover what people need to understand, feel, or do—and turn those insights into more useful content.</>
         ),
         tags: [
           {
-            name: "Marketing plan and customer journey",
+            name: "Research, listening, and audience questions",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Social media management and optimisation",
+        description: (
+          <>Plan platform-appropriate content, guide publishing, review performance signals, and use what the audience does next to improve future content decisions.</>
+        ),
+        tags: [
+          {
+            name: "Publishing, community, and performance learning",
           },
         ],
         images: [],
@@ -447,6 +448,131 @@ const gallery: Gallery = {
       alt: "Ahmed Ali Finishing and Décor social-content reel",
       title: "Finishing and décor content reel",
       description: "A vertical video asset that brings the finishing-content system to life through motion, pacing, and an immediate visual hook.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/5839163182180667052.jpg",
+      alt: "Horus Cube-K nutrient-release timeline post",
+      title: "Cube-K nutrient-release timeline",
+      description: "A product-education visual that makes the timing of nutrient availability easier to understand at a glance.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667053.jpg",
+      alt: "Horus plant-hormone education post",
+      title: "Plant hormones, made approachable",
+      description: "An educational concept that translates plant-growth science into a friendly, memorable social-media story.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667054.jpg",
+      alt: "Horus plant-signals education post",
+      title: "Plants respond to signals",
+      description: "A visual-led explanation that gives a technical crop topic an immediate and audience-friendly hook.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667055.jpg",
+      alt: "Horus Sunny fertilizer crop-priorities post",
+      title: "Every growth stage has a priority",
+      description: "A Sunny product visual that connects plant development to the right nutritional focus at the right time.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667056.jpg",
+      alt: "Horus Cube-K crop-quality post",
+      title: "Fruit quality is more than size",
+      description: "A product-storytelling design that connects Cube-K to the quality signals growers care about.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667057.jpg",
+      alt: "Horus agricultural brand-story post",
+      title: "Every harvest starts with the soil",
+      description: "A brand-led visual that turns agricultural roots and origin into a memorable story for Sunny.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667058.jpg",
+      alt: "Horus Sunny root-development post",
+      title: "Growth begins underground",
+      description: "A root-system visual that makes an invisible agricultural benefit clear before introducing the product.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667059.jpg",
+      alt: "Horus Cube-K quality-benefits post",
+      title: "One product, four quality benefits",
+      description: "A bold Cube-K product concept that organises multiple crop-quality benefits into one clear visual message.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667060.jpg",
+      alt: "Horus Sunny stronger-roots post",
+      title: "Stronger roots, stronger yield",
+      description: "A high-impact root visual that helps growers connect a healthy underground system with a stronger crop outcome.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667061.jpg",
+      alt: "Horus Sunny soil-to-harvest post",
+      title: "From soil to a bigger story",
+      description: "A visual narrative that gives the agricultural brand a broader, more emotional content angle.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5839163182180667062.jpg",
+      alt: "Ahmed Ali aspirational interior brand post",
+      title: "A home worth imagining",
+      description: "An aspirational brand visual that pairs a finished interior with an emotional invitation to imagine the final result.",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/video5839163181720673754.mp4",
+      alt: "Ahmed Ali apartment handover mistake Reel",
+      title: "Apartment handover mistake Reel",
+      description: "A short-form video concept that turns a common handover decision into a clear, practical warning.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/video5839163181720673755.mp4",
+      alt: "Ahmed Ali kitchen finishing mistake Reel",
+      title: "Kitchen finishing mistake Reel",
+      description: "An educational Reel that uses a familiar kitchen decision to make good execution easier to understand.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/video5839163181720673756.mp4",
+      alt: "Ahmed Ali waterproofing advice Reel",
+      title: "Waterproofing advice Reel",
+      description: "A practical video format that makes a hidden waterproofing decision visible before work begins.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/video5839163181720673757.mp4",
+      alt: "Ahmed Ali home-storytelling Reel",
+      title: "Your home has a story Reel",
+      description: "A brand-storytelling format that gives the finishing page a warmer, community-focused voice.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/video5839163181720673758.mp4",
+      alt: "Ahmed Ali wood-door protection Reel",
+      title: "Protect wood doors early Reel",
+      description: "A mistake-led Reel that turns a costly finishing detail into an actionable preparation message.",
+      orientation: "vertical",
+      type: "video",
+    },
+    {
+      src: "/images/gallery/video5839163181720673759.mp4",
+      alt: "Ahmed Ali electrical-socket mistake Reel",
+      title: "Electrical socket mistake Reel",
+      description: "A short-form educational warning that shows why electrical-point planning belongs before finishing.",
       orientation: "vertical",
       type: "video",
     },
