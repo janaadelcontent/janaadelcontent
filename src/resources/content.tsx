@@ -269,6 +269,13 @@ const gallery: Gallery = {
   description: "Original social content by Jana, showing how audience questions and product benefits become clear, engaging visual stories.",
   images: [
     {
+      src: "/images/gallery/silo.webp",
+      alt: "White robot photographed beneath a blue sky",
+      title: "A human touch in technology",
+      description: "A bright technology portrait that gives the gallery a memorable visual entry point and makes an abstract innovation theme feel approachable.",
+      orientation: "horizontal",
+    },
+    {
       src: "/images/gallery/741365568_122109772761298739_1925903136731901658_n.jpg",
       alt: "Educational bathroom-planning post for Ahmed Ali Finishing and Décor",
       title: "Bathroom planning guide",
