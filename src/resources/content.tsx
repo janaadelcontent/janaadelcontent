@@ -90,7 +90,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        <Text as="p">I don&apos;t start with &ldquo;What should we post today?&rdquo; I start with &ldquo;What does the audience need to understand, feel, or do?&rdquo;</Text>
+        <Text as="p">Hi, I don&apos;t start with &ldquo;What should we post today?&rdquo; I start with &ldquo;What does the audience need to understand, feel, or do?&rdquo;</Text>
         <Text as="p">I&apos;m a social media content creator and strategist focused on turning business ideas into clear, useful, and visually strong content. My work goes beyond designing individual posts: I develop content directions, build recurring series, translate technical or complicated information into audience-friendly stories, write Arabic copy, direct the visual concept, and turn one business objective into multiple content ideas across a consistent brand system.</Text>
         <Text as="p">I work hands-on from idea and research through creative direction, design, caption writing, and publishing—so I understand how every piece needs to work together, not only how each piece looks.</Text>
         <Text as="p"><strong>What I can actually handle:</strong> Content strategy &amp; planning · Content pillars · Content ideation · Copywriting · Creative direction · Social media design · Educational content · Brand consistency · Reels concepts &amp; scripts · Community-focused content</Text>
