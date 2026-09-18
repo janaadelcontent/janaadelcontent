@@ -99,7 +99,7 @@ const about: About = {
   },
   contact: {
     display: true,
-    title: "Let&apos;s work together",
+    title: "Let us work together",
     description: (
       <>
         For collaborations, campaigns, or research projects: <strong>janaa.aadel@gmail.com</strong>
